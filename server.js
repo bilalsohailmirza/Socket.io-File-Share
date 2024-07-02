@@ -6,7 +6,7 @@ const server = require("http").createServer(app)
 
 const io = require("socket.io")(server)
 
-// app.use(express.static(path.join("/home/bilal/Semester 6/CN/LAB/Project/working-directory/public")))
+
 app.use(express.static(path.join("/home/owaisk4/Win_backup/FAST NU assignments/CN Lab/Project/Socket.io-File-Share/public")))
 
 io.on("connection", (socket) => {
